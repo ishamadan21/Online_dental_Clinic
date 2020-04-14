@@ -1,0 +1,126 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/style-ie.css" media="screen, projection, tv" /><![endif]-->
+<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<title>Website name | Homepage</title>
+
+<style type="text/css">
+
+	body {
+  margin: 0;
+  font-family: Garamond;
+  text-indent: right;
+  background-image: url("bg4.jpg");
+  background-size: 100%;
+  background-opacity: 0.5;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #000066;
+}
+
+.topnav a {
+  float: right;
+  color: #FFFFFF;
+  text-align: right;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+
+.topnav a:hover {
+  background-color: #FFFFFF ;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#logo{
+  float: left;
+  opacity: 0.75;
+}
+
+
+table{
+	border-collapse: collapse;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Garamond;
+}
+
+</style>
+
+
+
+
+
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+</head>
+
+<body>
+
+
+<div>
+  <a href="homepage.html"><img id="logo" src="toothimage.jpg" height="60px" width="70px" style="padding-top: 15px;"></a>
+  <h2 style="padding-top: 35px; font-family: Verdana; color: #003d66; padding-left: 10px">SelectStar Dental Clinic</h2>
+</div>  
+
+
+<header style="width: 100%">
+  <div class="topnav" >
+  <a href="homepage.html">Logout</a>
+  <a href="contact.html">Contact</a>
+  </header>
+
+<h2 align="center" style="font-family: Garamond">Book Appointment</h2>
+
+<form action="appointmnenttable.php" method="post">
+ <div id="table">  
+ <form name="frm" enctype="multipart/form-data" action="registerdb.php" method="post" onSubmit="">
+ <table cellpadding="5px" align="center" style="font-size: 15px">
+
+<tr>
+<td>Date:</td>
+<td><input type="date" name="PatientD" required></td>
+</tr>
+<tr>
+<td>Time:</td>
+<td><input type="time" name="PatientT" required></td>
+</tr>
+<tr>
+  <td>Choose Dentist:</td><td>
+<select name="select2"> 
+<option value="Dr. Donald pearson">Dr. Donald pearson</option>
+<option value="Dr Richard Hesby">Dr Richard Hesby</option>
+<option value="Dr. Jonathan Engel">Dr. Jonathan Engel</option></td>
+</select></tr>
+<td></td>
+<td><input type="submit" name="button" value="Book Appointment">
+</td>
+</tr>
+<tr>
+  <td></td>
+  <td><a href="appointmentsuccess.php">View My appointments</a></td>
+</tr>
+</table>
+</form>
+ 
+</div>
+</form>
+</body>
+
+</html>

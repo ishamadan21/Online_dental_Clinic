@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dentist Clinic</title>
+	<head>
+	<style type="text/css">
+
+	body {
+  margin: 0;
+  font-family: Garamond;
+  text-indent: right;
+  background-image: url("bg4.jpg");
+  background-size: 100%;
+  background-opacity: 0.5;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000066;
+}
+
+.topnav a {
+  float: right;
+  color: #FFFFFF;
+  text-align: right;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+
+.topnav a:hover {
+  background-color: #FFFFFF ;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#logo{
+  float: left;
+  opacity: 0.75;
+}
+
+.img{
+  border: 2px solid  #ff1a1a;
+  padding: 2px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div>
+  <a href="homepage.html"><img id="logo" src="toothimage.jpg" height="60px" width="70px" style="padding-top: 15px;"></a>
+  <h2 style="padding-top: 35px; font-family: Verdana; color: #003d66; padding-left: 10px">SelectStar Dental Clinic</h2>
+</div>  
+
+
+<header style="width: 100%">
+  <div class="topnav" >
+  <a href="contact.html">Contact</a>
+  </header>
+<form action="login_trial.php" method="POST">
+
+ <div align="center" style="padding-top: 10px">
+ <table style="font-weight: bold">
+  <tr>
+    <td></td>
+    <td>Sign in</td>
+  </tr>
+    <tr>
+      <td><i>Username:</i></td>
+      <td><input type="text" name="username"></td>
+    </tr>
+    <tr>
+      <td><i>Password:</i></td>
+      <td><input type="Password" name="password"></td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td><input type="submit" onclick="clicked();" name="Submit" value="Submit" / ></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <a href="addPatient2.html" style="font-family: Helvetica; font-weight: bold;">New User? Click here</a>  
+    </td></tr>
+  </table>
+</div>
+</form>
+<script type="text/javascript">
+function clicked() {
+    alert('Signed in Successfully!');
+}
+</script>
+
+<footer>
+<p align="right" style="padding-bottom: 10px; margin-right: 10px; margin-top: 280px"><i>
+ Isha Madan    001393098<br>
+ Prasham Shah  001057833<br>
+ Rajavi Mehta  001057845<br>
+ Saurabh Satra 001059412</i></p>
+
+ <h5 style="padding-right: 10px" align="right">
+powered by@SelectStar Team
+</h5>
+</footer>
+</body>
+</html>

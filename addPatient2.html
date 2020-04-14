@@ -1,0 +1,436 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/style-ie.css" media="screen, projection, tv" /><![endif]-->
+<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<title>Website name | Homepage</title>
+
+<style type="text/css">
+
+	body {
+  margin: 0;
+  font-family: Garamond;
+  text-indent: right;
+  background-image: url("bg4.jpg");
+  background-size: 100%;
+  background-opacity: 0.5;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000066;
+}
+
+.topnav a {
+  float: right;
+  color: #FFFFFF;
+  text-align: right;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+
+.topnav a:hover {
+  background-color: #FFFFFF	;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#logo{
+  float: left;
+  opacity: 0.75;
+}
+
+.img{
+  border: 2px solid  #ff1a1a;
+  padding: 2px;
+}
+
+table{
+	border-collapse: collapse;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Garamond;
+}
+
+</style>
+
+<script type="text/javascript">
+
+/**--------------------------
+//* Validate Date Field script
+---------------------------**/
+
+function checkdate(){
+
+
+
+
+
+/*
+//for DOB field
+var validformat=/^\d{4}\/\d{2}\/\d{2}$/ //Basic check for format validity
+var returnval=false
+	var input=frm.elements[6].value;
+	if (!validformat.test(input))
+	{
+	alert("Invalid Date Format for field '" + frm.elements[6].name + "' .Please correct and submit again.")
+	return returnval
+	}
+	else{ //Detailed check for valid date ranges
+		var monthfield=input.split("/")[1]
+		var dayfield=input.split("/")[2]
+		var yearfield=input.split("/")[0]
+		//alert(monthfield +","+dayfield +"," +yearfield);
+		var dayobj = new Date(yearfield, monthfield-1,  dayfield )
+		//alert(dayobj);
+if ((dayobj.getMonth()+1!=monthfield)||(dayobj.getDate()!=dayfield)||(dayobj.getFullYear()!=yearfield))
+{
+alert("Invalid Day or Month or Year range detected for field '" + frm.elements[6].name + "' .Please correct and submit again.")
+return returnval
+}
+else
+returnval=true
+
+}
+//if (returnval==false) frm.elements[6].select()
+//return returnval
+*/
+
+/*
+//for ExamDate 1
+var validformat=/^\d{4}\/\d{2}\/\d{2}$/ //Basic check for format validity
+var returnval=false
+	var input=frm.elements[25].value;
+	
+	if (!validformat.test(input))
+	{
+	alert("Invalid Date Format for field '" + frm.elements[25].name + "' .Please correct and submit again.")
+	return returnval
+	}
+	else{ //Detailed check for valid date ranges
+		var monthfield=input.split("/")[1]
+		var dayfield=input.split("/")[2]
+		var yearfield=input.split("/")[0]
+		//alert(monthfield +","+dayfield +"," +yearfield);
+		var dayobj = new Date(yearfield, monthfield-1,  dayfield )
+		//alert(dayobj);
+if ((dayobj.getMonth()+1!=monthfield)||(dayobj.getDate()!=dayfield)||(dayobj.getFullYear()!=yearfield))
+{
+alert("Invalid Day or Month or Year range detected for field '" + frm.elements[25].name + "' .Please correct and submit again.")
+return returnval
+}
+else
+returnval=true
+}
+//if (returnval==false) frm.elements[25].select()
+
+//for ExamDate 2
+var validformat=/^\d{4}\/\d{2}\/\d{2}$/ //Basic check for format validity
+var returnval=false
+	var input=frm.elements[27].value;
+	
+	if (!validformat.test(input))
+	{
+	alert("Invalid Date Format for field '" + frm.elements[27].name + "' .Please correct and submit again.")
+	return returnval
+	}
+	else{ //Detailed check for valid date ranges
+		var monthfield=input.split("/")[1]
+		var dayfield=input.split("/")[2]
+		var yearfield=input.split("/")[0]
+		//alert(monthfield +","+dayfield +"," +yearfield);
+		var dayobj = new Date(yearfield, monthfield-1,  dayfield )
+		//alert(dayobj);
+if ((dayobj.getMonth()+1!=monthfield)||(dayobj.getDate()!=dayfield)||(dayobj.getFullYear()!=yearfield))
+{
+alert("Invalid Day or Month or Year range detected for field '" + frm.elements[28].name + "' .Please correct and submit again.")
+
+return returnval
+}
+else
+returnval=true
+}
+
+//for ExamDate 3
+var validformat=/^\d{4}\/\d{2}\/\d{2}$/ //Basic check for format validity
+var returnval=false
+	var input=frm.elements[27].value;
+	
+	if (!validformat.test(input))
+	{
+	alert("Invalid Date Format for field '" + frm.elements[27].name + "' .Please correct and submit again.")
+	return returnval
+	}
+	else{ //Detailed check for valid date ranges
+		var monthfield=input.split("/")[1]
+		var dayfield=input.split("/")[2]
+		var yearfield=input.split("/")[0]
+		//alert(monthfield +","+dayfield +"," +yearfield);
+		var dayobj = new Date(yearfield, monthfield-1,  dayfield )
+		//alert(dayobj);
+if ((dayobj.getMonth()+1!=monthfield)||(dayobj.getDate()!=dayfield)||(dayobj.getFullYear()!=yearfield))
+{
+alert("Invalid Day or Month or Year range detected for field '" + frm.elements[27].name + "' .Please correct and submit again.")
+
+return returnval
+}
+else
+returnval=true
+
+return returnval
+}
+
+*/
+
+}
+
+</script>
+
+<script type="text/javascript">
+function validateForm()
+{
+ //to validate age limit(20-28)
+/*var dd=frm.elements[6].value;
+var mm=frm.elements[7].value;
+var yy=frm.elements[8].value;
+var dob=dd + "/" + mm + "/" + yy;
+alert(dob);
+cdate=new Date();
+alert(cdate);
+*/
+//tod=days_between(dob,cdate);
+//alert(tod);
+ // cdate=new Date();
+ // diff=new Date();
+ // var today = curdate.getMonth() + "/" + curdate.getDay() + "/" + curdate.getYear();
+ // diff.setTime(Math.abs(cdate.getTime() – dob.getTime()));
+  //var today=diff.getTime();
+ // alert(today);
+  // var one_day=1000*60*60*24;
+
+  //var today=days_between(curdate,dob); 
+//alert(today);
+  /*alert(dob);
+  var days_left = days_between(today, dob);
+  alert(days_left);
+return false;
+*/
+// to check username validity
+var x=document.forms["frm"]["t1"].value;
+//alert(x);
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+  
+  
+   //  check for valid numeric values	
+   var strValidChars = "0123456789.-/";
+   var strChar,strString;
+   var blnResult = true;
+
+   for(var i=0;i<frm.elements.length;i++)
+ {
+   //  test strString consists of valid characters listed above
+   if(i==6 || i==8|| i==12 || i==24 || i==26 || i==27)
+   {
+   strString=frm.elements[i].value;
+   for (j = 0; j < strString.length && blnResult == true; j++)
+      {
+      strChar = strString.charAt(j);
+      if (strValidChars.indexOf(strChar) == -1)
+         {
+		 alert("Please enter only numeric values in '" +  frm.elements[i].name + "' field");
+		 frm.elements[i].value="#ERROR";
+         blnResult = false;
+		  return blnResult;
+         }
+      }
+	 
+	  }
+	  }
+   
+       //  check for valid alphabetical values	
+   var strValidChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ. ()";
+   var strChar,strString;
+   var blnResult = true;
+
+   for(var i=0;i<frm.elements.length;i++)
+ {
+   //  test strString consists of valid characters listed above
+  // if(i!=3 && i!=8 && i!=9 && i!=10 && i!=14 && i!=17 && i!=30 && i!=31 &&i!=0 && i!=1 && i!=6 && i!=7 && i!=11 && i!=12 && i!=13 && i!=25 && i!=26 //&& i!=27 && i!=34)
+   if(i==2 ||i==4 ||i==5 || i==13|| i==14 || i==15 || i==16 || i==17 || i==25 || i==28 || i==29)
+   {
+   strString=frm.elements[i].value;
+  // alert(i);
+   for (j = 0; j < strString.length && blnResult == true; j++)
+      {
+      strChar = strString.charAt(j);
+      if (strValidChars.indexOf(strChar) == -1)
+         {
+		 alert("Please enter only alphabets in '" +  frm.elements[i].name + "' field");
+		 frm.elements[i].value="#ERROR";
+         blnResult = false;
+		  return blnResult;
+         }
+      }
+	 
+	  }
+	  }
+   
+  //to check E-Mail validity
+  var x=document.forms["frm"]["eMail"].value;
+//alert(x);
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+
+
+//to check for NULL values
+ for(var i=0;i<frm.elements.length;i++)
+ {
+// var x=document.forms["frm"]["t2"].value;
+if((i>=0 && i<=13) || (i>=16 && i<=18) || (i>=20 && i<=21) || (i>=36 && i<=41))
+{
+var x=frm.elements[i].value;
+//alert(frm.elements[i].value + "," +i);
+ 
+ if ((x==null || x==""))
+  {
+  alert("Please don't leave '" +  frm.elements[i].name + "' field empty");
+  return false;
+  }
+ } 
+  }
+ 
+ 
+  
+  
+  
+  }
+</script>
+
+
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+</head>
+
+<body>
+
+
+<div>
+  <a href="homepage.html"><img id="logo" src="toothimage.jpg" height="60px" width="70px" style="padding-top: 15px;"></a>
+  <h2 style="padding-top: 35px; font-family: Verdana; color: #003d66; padding-left: 10px">SelectStar Dental Clinic</h2>
+</div>  
+
+
+<header style="width: 100%">
+  <div class="topnav" >
+  <a href="homepage.html">Back</a>
+  <a href="contact.html">Contact</a>
+  </header>
+
+<h2 align="center" style="font-family: Garamond">Patient Registration</h2>
+
+<form action="add_patient_success1.php" method="post">
+ <div id="table">  
+ <form name="frm" enctype="multipart/form-data" action="registerdb.php" method="post" onSubmit="">
+ <table cellpadding="5px" align="center" style="font-size: 15px">
+<tr>
+<td>Enter E-Mail as UserName</td>
+<td><input type="email" name="UserName"  required></td>
+</tr>
+<tr>
+<td>Enter Password</td>
+<td><input type="password" name="password" required></td>
+</tr>
+<tr>
+<td>First Name of the patient</td>
+<td> <input type="text" name="PatientFName" required></td>
+</tr>
+<tr>
+<td>Last Name of the patient</td>
+<td> <input type="text" name="PatientLName" required></td>
+</tr>
+<tr>
+<td>Date Of Birth(YYYY-MM-DD)</td>
+<td><input type= "date" name="DOB"></td>
+</tr>
+<tr>
+<td>Mobile No.</td>
+<td> <input type="number" name="Phone" required></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td> <input type="radio" name ="Gender" value="Male">Male
+<input type="radio" name="Gender" value="Female" required>Female
+<input type="radio" name="Gender" value="Other" required>Other</td>
+</tr>
+
+<tr>
+<td>Address_1</td>
+<td ><input type="text" name="Address1" required></td>
+</tr>
+<tr>
+<td>Pin_Code_1</td>
+<td ><input type="number" name="Zip1" required></td>
+</tr><tr>
+<tr>
+<td>City_1</td>
+<td ><input type="text" name="City1" required></td>
+</tr>
+<tr>
+<td>State_1</td>
+<td ><input type="text" name="State1" required></td>
+</tr>
+
+<tr>
+<td>First Name of emergency contact</td>
+<td> <input type="text" name="PatientEFName" required></td>
+</tr>
+<tr>
+<td>Last Name of emergency contact</td>
+<td> <input type="text" name="PatientELName" required></td>
+</tr>
+<td>Phone Number of Emergency Contact</td>
+<td> <input type="number" name="EPhone" required></td>
+</tr>
+<tr>
+	<td></td>
+	<td>
+		
+<input type="submit" value="submit" onClick="">
+	</td>
+</tr>
+
+
+
+</table>
+</form>
+ 
+</div>
+</form>
+</body>
+
+</html>
